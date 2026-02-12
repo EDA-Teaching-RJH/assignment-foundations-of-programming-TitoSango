@@ -25,7 +25,11 @@ def run_system_monolith():
         
         opt = input("Select option: ")
         
+<<<<<<< HEAD
         if opt == "1":  git commit -m "changed= to== in if statement"
+=======
+        if opt == "1":  
+>>>>>>> 9ee32b8 (fix comparison bug)
             print("Current Crew List:")
             
             for i in range(len(n)):   git commit -,m"fixed index out of ranger error in view crew option
