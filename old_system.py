@@ -13,7 +13,7 @@ def run_system_monolith():
     loading = 0
     while loading < 5:
         print("Loading module " + str(loading))
-        loading += 1
+        loading += 1  git commit -m "fixed infinite loading loop"
     
     while True:
         print("\n--- MENU ---")
@@ -25,10 +25,10 @@ def run_system_monolith():
         
         opt = input("Select option: ")
         
-        if opt == "1":  
+        if opt == "1":  git commit -m "changed= to== in if statement"
             print("Current Crew List:")
             
-            for i in range(len(n))):
+            for i in range(len(n)):   git commit -,m"fixed index out of ranger error in view crew option
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
@@ -38,30 +38,27 @@ def run_system_monolith():
             
            
             n.append(new_name)
-            r,append(new_rank)
-            d.append(new_div)
+        r.append(new_rank)
+        d.append(new_div)       
             print("Crew member added.")
             
         elif opt == "3":
             rem = input("Name to remove: ")
            
-           if rem in n:
-           idx = n.index(rem)
+            idx = n.index(rem)
             n.pop(idx)
             r.pop(idx)
             d.pop(idx)
             print("Removed.")
-        else: 
-            print ("crew member not found.")
-     
+            
         elif opt == "4":
             print("Analyzing...")
             count = 0
             
             for rank in r:
-                if rank == "Captain" or rank == "Commander": 
+                if rank == "Captain" or "Commander": 
                     count = count + 1
-            print("High ranking officers: " ,count) 
+            print("High ranking officers: " + count) 
             
         elif opt == "5":
             print("Shutting down.")
@@ -89,8 +86,6 @@ def run_system_monolith():
         while fuel > 0:
             
             print("Idling...")
-            fuel -= 10 
+            break 
             
         print("End of cycle.")
-
-run_system_monolith()
