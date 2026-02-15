@@ -32,7 +32,7 @@ def run_system_monolith():
 >>>>>>> 9ee32b8 (fix comparison bug)
             print("Current Crew List:")
             
-            for i in range(len(n)):   git commit -,m"fixed index out of ranger error in view crew option
+            for i in range(len(n)):
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
@@ -42,8 +42,6 @@ def run_system_monolith():
             
            
             n.append(new_name)
-        r.append(new_rank)
-        d.append(new_div)       
             print("Crew member added.")
             
         elif opt == "3":
