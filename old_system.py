@@ -32,7 +32,7 @@ def run_system_monolith():
 >>>>>>> 9ee32b8 (fix comparison bug)
             print("Current Crew List:")
             
-            for i in range(len(n)):
+            for i in range(len(n)):3
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
