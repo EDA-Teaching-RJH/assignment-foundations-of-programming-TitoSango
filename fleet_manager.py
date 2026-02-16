@@ -188,7 +188,7 @@ def main():
             print("Shutting down...")
             break
         else:
-            print(f"Option {choice} - Coming soon!")
+            print("Invalid option")
 
 if __name__ == "__main__":
    main()
