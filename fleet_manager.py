@@ -96,6 +96,22 @@ def display_roster(names, ranks, divs, ids):
     print("Total: " + str(len(names)))
 
 
+# Search crew function
+def search_crew(names, ranks, divs, ids):
+    search_term = input("Enter name: ").lower()
+    
+    found = False
+    print("\nResults:")
+    
+    for i in range(len(names)):
+        if search_term in names[i].lower():
+            print("ID: " + ids[i] + " | " + names[i] + " | " + ranks[i] + " | " + divs[i])
+            found = True
+    
+    if not found:
+        print("No results")
+
+
 
 def main():
     names, ranks, divs, ids = init_database()
