@@ -1,3 +1,4 @@
+
 n = ["Picard", "Riker", "Data", "Worf"]
 r = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
 d = ["Command", "Command", "Operations", "Security"]
@@ -13,7 +14,7 @@ def run_system_monolith():
     loading = 0
     while loading < 5:
         print("Loading module " + str(loading))
-        loading += 1 
+        
     
     while True:
         print("\n--- MENU ---")
@@ -28,7 +29,7 @@ def run_system_monolith():
         if opt == "1":  
             print("Current Crew List:")
             
-            for i in range(len(n)):
+            for i in range(10):
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
@@ -87,3 +88,5 @@ def run_system_monolith():
             break 
             
         print("End of cycle.")
+
+run_system_monolith
