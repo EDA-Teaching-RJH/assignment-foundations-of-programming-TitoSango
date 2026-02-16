@@ -79,7 +79,7 @@ def run_system_monolith():
        
         if len(n) > 0:
             print("Database has entries.")
-        if len(n) == 0:
+        else:
             print("Database empty.")
 
         
