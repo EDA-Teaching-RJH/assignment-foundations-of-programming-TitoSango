@@ -112,6 +112,22 @@ def search_crew(names, ranks, divs, ids):
         print("No results")
 
 
+# Filter function
+def filter_by_division(names, divs):
+    target_div = input("Enter division: ")
+    
+    print("\nCrew in " + target_div + ":")
+    found = False
+    
+    for i in range(len(names)):
+        if divs[i] == target_div:
+            print("- " + names[i])
+            found = True
+    
+    if not found:
+        print("No crew in this division")
+
+
 
 def main():
     names, ranks, divs, ids = init_database()
