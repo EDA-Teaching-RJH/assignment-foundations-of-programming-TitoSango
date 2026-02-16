@@ -6,6 +6,7 @@ def init_database():
     ids = ["001", "002", "003", "004", "005"]
     return names, ranks, divs, ids
 
+# Display roster
 def display_menu():
     print("\n=== FLEET MANAGEMENT SYSTEM ===")
     print("1. Display Roster")
@@ -42,6 +43,26 @@ def add_member(names, ranks, divs, ids):
     ids.append(new_id)
     
     print("Member added")
+
+
+# Remove member by ID
+def remove_member(names, ranks, divs, ids):
+    target_id = input("Enter ID to remove: ")
+        
+    if target_id not in ids:
+        print("ID not found")
+        return
+        
+    idx = ids.index(target_id)
+        
+    removed_name = names.pop(idx)
+    ranks.pop(idx)
+    divs.pop(idx)
+    ids.pop(idx)
+        
+    print(removed_name + " removed")
+
+
 
 def main():
     names, ranks, divs, ids = init_database()
