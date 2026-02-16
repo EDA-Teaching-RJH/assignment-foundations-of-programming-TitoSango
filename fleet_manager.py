@@ -83,6 +83,19 @@ def update_rank(names, ranks, ids):
     print("Rank updated")
 
 
+# Display roster function
+def display_roster(names, ranks, divs, ids):
+    print("\n" + "="*50)
+    print("ID    Name            Rank                Division")
+    print("="*50)
+    
+    for i in range(len(names)):
+        print(ids[i] + "    " + names[i] + "    " + ranks[i] + "    " + divs[i])
+    
+    print("="*50)
+    print("Total: " + str(len(names)))
+
+
 
 def main():
     names, ranks, divs, ids = init_database()
