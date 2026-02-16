@@ -127,6 +127,27 @@ def filter_by_division(names, divs):
     if not found:
         print("No crew in this division")
 
+# Calculate payroll function
+def calculate_payroll(ranks):
+    pay_scale = {
+        "Captain": 1000,
+        "Commander": 800,
+        "Lt. Commander": 600,
+        "Lieutenant": 400,
+        "Ensign": 200
+    }
+    
+    total = 0
+    
+    for rank in ranks:
+        if rank in pay_scale:
+            total += pay_scale[rank]
+        else:
+            total += 200
+    
+    print("\nTotal Payroll: " + str(total) + " credits")
+    return total
+
 
 
 def main():
