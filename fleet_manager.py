@@ -6,6 +6,7 @@ def init_database():
     ids = ["001", "002", "003", "004", "005"]
     return names, ranks, divs, ids
 
+
 # Display roster
 def display_menu():
     print("\n=== FLEET MANAGEMENT SYSTEM ===")
@@ -22,6 +23,7 @@ def display_menu():
     choice = input("Select option: ")
     return choice
 
+# Add member function
 def add_member(names, ranks, divs, ids):
     new_id = input("Enter ID: ")
     if new_id in ids:
@@ -61,6 +63,24 @@ def remove_member(names, ranks, divs, ids):
     ids.pop(idx)
         
     print(removed_name + " removed")
+
+
+# Update rank function
+def update_rank(names, ranks, ids):
+    target_id = input("Enter ID to update: ")
+    
+    if target_id not in ids:
+        print("ID not found")
+        return
+    
+    idx = ids.index(target_id)
+    
+    print("Current rank: " + ranks[idx])
+    
+    new_rank = input("Enter new rank: ")
+    ranks[idx] = new_rank
+    
+    print("Rank updated")
 
 
 
