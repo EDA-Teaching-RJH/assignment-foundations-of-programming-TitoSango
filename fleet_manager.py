@@ -146,7 +146,18 @@ def calculate_payroll(ranks):
             total += 200
     
     print("\nTotal Payroll: " + str(total) + " credits")
-    return total
+    return 
+
+# Count officers function
+def count_officers(ranks):
+    count = 0
+    
+    for rank in ranks:
+        if rank == "Captain" or rank == "Commander":
+            count += 1
+    
+    print("Officers: " + str(count))
+    return count
 
 
 
