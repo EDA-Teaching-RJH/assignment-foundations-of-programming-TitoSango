@@ -28,7 +28,11 @@ def main():
     while True:
         choice = display_menu()
         
-        if choice == "9":
+        if choice == "2":
+            add_member(names, ranks, divs, ids)
+        elif choice == "3":
+            remove_member(names, ranks, divs, ids)
+        elif choice == "9":
             print("Shutting down...")
             break
         else:
