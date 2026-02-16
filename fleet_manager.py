@@ -23,7 +23,16 @@ def display_menu():
 
 def main():
     names, ranks, divs, ids = init_database()
-    print(f"Loaded {len(names)} crew members")
+    print("FLEET MANAGEMENT SYSTEM v2.0")
+    
+    while True:
+        choice = display_menu()
+        
+        if choice == "9":
+            print("Shutting down...")
+            break
+        else:
+            print(f"Option {choice} - Coming soon!")
 
 if __name__ == "__main__":
    main()
